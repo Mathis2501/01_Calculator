@@ -32,12 +32,28 @@ namespace _01_Calculator
             numbers[1] = 11;
             Assert.AreEqual(18, Calculator.Sum(numbers));
 
-
+            numbers = new int[5];
+            numbers[0] = 7;
+            numbers[1] = 11;
+            numbers[4] = 10;
+            Assert.AreEqual(28, Calculator.Sum(numbers));
         }
         [TestMethod]
         public void Multiply()
         {
-            Assert.AreEqual(30, Calculator.Multiply(5, 6));
+            int[] numbers = new int[2] { 0, 0, };
+            numbers = new int[5];
+            numbers[0] = 7;
+            numbers[1] = 11;
+            numbers[4] = 10;
+            Assert.AreEqual(0, Calculator.Multiply(numbers));
+            
+            numbers = new int[3];
+            numbers[0] = 7;
+            numbers[1] = 11;
+            numbers[2] = 10;
+            Assert.AreEqual(770, Calculator.Multiply(numbers));
+
         }
         [TestMethod]
         public void Power()

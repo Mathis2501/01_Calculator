@@ -29,9 +29,14 @@ namespace _01_Calculator
             
         }
 
-        public static int Multiply(int x, int y)
+        internal static int Multiply(int[] numbers)
         {
-            return x * y;
+            int resultat = 1;
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                resultat = resultat * numbers[i];
+            }
+            return resultat;
         }
 
         public static int Factorial(int x)
@@ -47,7 +52,13 @@ namespace _01_Calculator
 
         internal static int Sum(int[] numbers)
         {
-            return numbers[0] + numbers[1];
+            int resultat = 0;
+            for (int i=0; i< numbers.Length; i++)
+            {
+                resultat = resultat + numbers[i];
+
+            }
+            return resultat;
         }
 
     }
