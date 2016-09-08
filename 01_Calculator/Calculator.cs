@@ -29,7 +29,7 @@ namespace _01_Calculator
             
         }
 
-        internal static int Multiply(int[] numbers)
+        public static int Multiply(int[] numbers)
         {
             int resultat = 1;
             for (int i = 0; i < numbers.Length; i++)
@@ -50,7 +50,7 @@ namespace _01_Calculator
             return x;
         }
 
-        internal static int Sum(int[] numbers)
+        public static int Sum(int[] numbers)
         {
             int resultat = 0;
             for (int i=0; i< numbers.Length; i++)
